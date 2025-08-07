@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f2f2;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 50%;
+  position: relative;
+  animation: jump 1s infinite ease-in-out;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 200px;
+  }
+}
